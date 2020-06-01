@@ -18,10 +18,10 @@ body {
 
 .division{
 float: left;
-  width: 17%;
+  width: 20%;
 /* display: inline; */
-/* border: 1px solid blue;    
-background-color: green;  */
+/* border: 1px solid blue;  */   
+/* background-color: green; */ 
 padding: 6px;
 padding-top: 19px;
 }
@@ -37,7 +37,9 @@ div.csm {
  /*  background-color: yellow;  */
  /*  margin-right: 0px; */
  margin-bottom: 1px;
+ margin-right: 2px;
 }
+
 .letra{
   /* float: left;  */
 width: 10%;
