@@ -4,6 +4,10 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from "@angular/forms";
 
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+
 //Rutas
 import { app_routing } from "./app.routes";
 
@@ -37,7 +41,7 @@ import { HomeComponent } from './components/home/home.component';
     AppRoutingModule,
     app_routing,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,MatInputModule,MatButtonModule,MatSelectModule
   ],
   providers: [InformacionService],
   bootstrap: [AppComponent]

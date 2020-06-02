@@ -7,8 +7,9 @@
     <hr class="my-4">
     <p class="lead"></p>
 
-<!--  (ngSubmit)="save($event)" -->
-    <form [formGroup]="form" (ngSubmit)="save($event)">
+    <!--  (ngSubmit)="save($event)" -->
+    <!--  <form [formGroup]="form" (ngSubmit)="save($event)"> -->
+    <form [formGroup]="form">
       <!-- Formulario  -->
       <div class="csm">
         <a>Edad</a>
@@ -16,9 +17,13 @@
         <!--   </div> -->
         <!--   <div class="divdre">  Combobox edad -->
         <!--  <span class="csm"> -->
-        <select formControlName="tipotest">
-          <optgroup label="Niños">
-            <option value="ninez">7</option>
+        <select   formControlName="tipotest">
+          <option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </option>
+
+          <!--  <optgroup label="Niños">
+            <option value="ninez" routerLink="about">7</option>
             <option value="ninez">8</option>
             <option value="ninez">9</option>
             <option value="ninez">10</option>
@@ -43,11 +48,11 @@
           </optgroup>
 
           <optgroup label="Adultos">
-            <option value="adultos">25 en adelante </option>
-          </optgroup>
+            <option value="adultos">25 en adelante </option> -->
+          <!--   </optgroup> -->
         </select>
 
-       <!--  <h4>Basic native select</h4>
+        <!--  <h4>Basic native select</h4>
         <mat-form-field>
           <mat-label>Cars</mat-label>
           <select matNativeControl required>
@@ -59,16 +64,17 @@
         </mat-form-field>-->
 
 
-        
-       <!--  <input type="email" formControlName="email"> -->
-      
-
+        <!--  <input type="email" formControlName="email"> -->
       </div>
       <div class="division">
-        <button  class="btn btn-primary btn-lg" type="submit">Aplicar Test</button >
+        <button class="btn btn-primary btn-lg" type="submit" (click)="onSelect(foods)" >Aplicar Test</button>
       </div>
       <hr>
+      <button class="btn btn-primary btn-lg" type="submit" (click)="onSelect(foods)" >Aplicar Test</button>
+
+
     </form>
+
 
   </div>
 
