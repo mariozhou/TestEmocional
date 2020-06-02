@@ -7,7 +7,7 @@
     <hr class="my-4">
     <p class="lead"></p>
 
-
+<!--  (ngSubmit)="save($event)" -->
     <form [formGroup]="form" (ngSubmit)="save($event)">
       <!-- Formulario  -->
       <div class="csm">
@@ -16,7 +16,7 @@
         <!--   </div> -->
         <!--   <div class="divdre">  Combobox edad -->
         <!--  <span class="csm"> -->
-        <select >
+        <select formControlName="tipotest">
           <optgroup label="Niños">
             <option value="ninez">7</option>
             <option value="ninez">8</option>
@@ -57,6 +57,11 @@
             <option value="audi">Audi</option>
           </select>
         </mat-form-field>-->
+
+
+        
+       <!--  <input type="email" formControlName="email"> -->
+      
 
       </div>
       <div class="division">
