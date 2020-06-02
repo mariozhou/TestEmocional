@@ -8,7 +8,7 @@
     <p class="lead"></p>
 
 
-    <form [formGroup]="form">
+    <form [formGroup]="form" (ngSubmit)="save($event)">
       <!-- Formulario  -->
       <div class="csm">
         <a>Edad</a>
@@ -16,7 +16,7 @@
         <!--   </div> -->
         <!--   <div class="divdre">  Combobox edad -->
         <!--  <span class="csm"> -->
-        <select formControlName="edad">
+        <select >
           <optgroup label="Niños">
             <option value="ninez">7</option>
             <option value="ninez">8</option>
@@ -47,7 +47,7 @@
           </optgroup>
         </select>
 
-        <h4>Basic native select</h4>
+       <!--  <h4>Basic native select</h4>
         <mat-form-field>
           <mat-label>Cars</mat-label>
           <select matNativeControl required>
@@ -56,12 +56,11 @@
             <option value="mercedes">Mercedes</option>
             <option value="audi">Audi</option>
           </select>
-        </mat-form-field>
-
+        </mat-form-field>-->
 
       </div>
       <div class="division">
-        <a class="btn btn-primary btn-lg" role="button">Aplicar Test</a>
+        <button  class="btn btn-primary btn-lg" type="submit">Aplicar Test</button >
       </div>
       <hr>
     </form>

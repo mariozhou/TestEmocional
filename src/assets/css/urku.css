@@ -20,8 +20,8 @@ body {
 float: left;
   width: 20%;
 /* display: inline; */
-/* border: 1px solid blue;  */   
-/* background-color: green; */ 
+ /* border: 1px solid blue;   */  
+/*  background-color: green;  */
 padding: 6px;
 padding-top: 19px;
 }
@@ -33,11 +33,11 @@ div.csm {
   width: 15%;
  /*  height: 100px; */
   padding: 3px;
-  /* border: 1px solid blue;     */
- /*  background-color: yellow;  */
+ /*  border: 1px solid blue;    
+  background-color: yellow;  */
  /*  margin-right: 0px; */
  margin-bottom: 1px;
- margin-right: 2px;
+ margin-right: 23px;
 }
 
 .letra{

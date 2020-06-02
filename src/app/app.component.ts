@@ -22,7 +22,7 @@ export class AppComponent {
   public carga_info(){
     this.json.getJson("assets/data/info.pagina.json")
               .subscribe( (data:any ) =>{
-                //  console.log(data);
+                  console.log(data);
                   this.cargada = true;
                   this.info = data;
               })

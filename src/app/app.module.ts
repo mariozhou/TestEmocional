@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from "@angular/forms";
+/* import { ReactiveFormsModule } from "@angular/forms"; */
 import { HttpClientModule } from '@angular/common/http';
 
 //Rutas
@@ -31,12 +31,11 @@ import { HomeComponent } from './components/home/home.component';
     AboutComponent,
     HomeComponent
   ],
-  imports: [
+  imports: [ 
     BrowserModule,
     AppRoutingModule,
     app_routing,
-    HttpClientModule,
-    ReactiveFormsModule
+    HttpClientModule
   ],
   providers: [InformacionService],
   bootstrap: [AppComponent]
