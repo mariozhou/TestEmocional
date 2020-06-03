@@ -8,6 +8,10 @@ import {
     ProductoComponent,
     HomeComponent,
     ProtafolioComponent,
+    AdultoComponent,
+    TestComponent,
+    PreguntasComponent
+
 
 }  from './components/index.paginas';
 
@@ -16,6 +20,10 @@ const app_routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'producto', component: ProductoComponent },
     { path: 'about', component: AboutComponent },
+    { path: 'Tadulto', component: AdultoComponent },
+    { path: 'Tadoles', component: TestComponent },
+    { path: 'Tnino', component: PreguntasComponent },
+
     { path: '**', pathMatch: 'full', redirectTo:'home' },
 
     //{ path: 'path/:routeParam', component: MyComponent },

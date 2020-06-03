@@ -1,12 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-/* import { ReactiveFormsModule } from "@angular/forms"; */
-import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from "@angular/forms";
 
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSelectModule } from '@angular/material/select';
+import { HttpClientModule } from '@angular/common/http';
 
 //Rutas
 import { app_routing } from "./app.routes";
@@ -26,6 +21,9 @@ import { ProtafolioComponent } from './components/protafolio/protafolio.componen
 import { AboutComponent } from './components/about/about.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { HomeComponent } from './components/home/home.component';
+import { PreguntasComponent } from './components/preguntas/preguntas.component';
+import { TestComponent } from './components/testa/testa.component';
+import { AdultoComponent } from './components/adulto/adulto.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,14 +32,17 @@ import { HomeComponent } from './components/home/home.component';
     ProtafolioComponent,
     ProductoComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    TestComponent,
+    PreguntasComponent,
+    AdultoComponent
+
   ],
-  imports: [ 
+  imports: [
     BrowserModule,
     AppRoutingModule,
     app_routing,
-    HttpClientModule,
-    ReactiveFormsModule,MatInputModule,MatButtonModule,MatSelectModule
+    HttpClientModule
   ],
   providers: [InformacionService],
   bootstrap: [AppComponent]
